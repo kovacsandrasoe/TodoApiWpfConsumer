@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <Label Content="TodoName" Background="LightBlue"/>
+            <TextBox x:Name="tb_name" />
+            <Button Content="Add" Click="Button_Click" />
+        </StackPanel>
+        <DataGrid Grid.Row="1" x:Name="dgrid" />
     </Grid>
 </Window>
